@@ -1,0 +1,1 @@
+/home/ndirangu/Documents/intro/pi-code/src/recap_robot/build/recap_robot/ament_cmake_environment_hooks/local_setup.bash

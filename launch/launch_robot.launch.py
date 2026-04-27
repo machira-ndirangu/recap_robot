@@ -20,19 +20,13 @@ def generate_launch_description():
     # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled
     # !!! MAKE SURE YOU SET THE PACKAGE NAME CORRECTLY !!!
 
-    package_name='recap_robot' #<--- CHANGE ME
+    package_name='dojo' #<--- CHANGE ME
 
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory(package_name),'launch','rsp.launch.py'
                 )]), launch_arguments={'use_sim_time': 'false', 'use_ros2_control': 'true'}.items()
     )
-
-    # joystick = IncludeLaunchDescription(
-    #             PythonLaunchDescriptionSource([os.path.join(
-    #                 get_package_share_directory(package_name),'launch','joystick.launch.py'
-    #             )])
-    # )
 
 
     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')
@@ -42,8 +36,7 @@ def generate_launch_description():
             parameters=[twist_mux_params],
             remappings=[('/cmd_vel_out','/diff_cont/cmd_vel_unstamped')]
         )
-
-    
+     
 
 
     robot_description = Command(['ros2 param get --hide-type /robot_state_publisher robot_description'])
@@ -84,6 +77,20 @@ def generate_launch_description():
             on_start=[joint_broad_spawner],
         )
     )
+    imu_broad_spawner = Node(
+    package="controller_manager",
+    executable="spawner",
+    arguments=["imu_broad"],
+)
+
+    delayed_imu_broad_spawner = RegisterEventHandler(
+        event_handler=OnProcessStart(
+            target_action=controller_manager,
+            on_start=[imu_broad_spawner],
+        )
+    )
+
+    
 
 
     # Code for delaying a node (I haven't tested how effective it is)
@@ -107,9 +114,9 @@ def generate_launch_description():
     # Launch them all!
     return LaunchDescription([
         rsp,
-        # joystick,
         twist_mux,
         delayed_controller_manager,
         delayed_diff_drive_spawner,
-        delayed_joint_broad_spawner
+        delayed_joint_broad_spawner,
+        delayed_imu_broad_spawner
     ])

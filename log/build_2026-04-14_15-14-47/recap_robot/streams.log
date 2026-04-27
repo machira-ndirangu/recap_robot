@@ -1,0 +1,80 @@
+[0.014s] Invoking command in '/home/ndirangu/Documents/intro/pi-code/src/recap_robot/build/recap_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ndirangu/Documents/intro/pi-code/src/recap_robot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot
+[0.115s] -- The C compiler identification is GNU 11.4.0
+[0.201s] -- The CXX compiler identification is GNU 11.4.0
+[0.210s] -- Detecting C compiler ABI info
+[0.275s] -- Detecting C compiler ABI info - done
+[0.282s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.282s] -- Detecting C compile features
+[0.283s] -- Detecting C compile features - done
+[0.286s] -- Detecting CXX compiler ABI info
+[0.352s] -- Detecting CXX compiler ABI info - done
+[0.363s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.363s] -- Detecting CXX compile features
+[0.364s] -- Detecting CXX compile features - done
+[0.373s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.506s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.569s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.598s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.659s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.667s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.667s] -- Configured cppcheck include dirs: 
+[0.667s] -- Configured cppcheck exclude dirs and/or files: 
+[0.676s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.676s] -- Configured cpplint exclude dirs and/or files: 
+[0.678s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.681s] -- Added test 'lint_cmake' to check CMake code style
+[0.682s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.691s] -- Added test 'uncrustify' to check C / C++ code style
+[0.691s] -- Configured uncrustify additional arguments: 
+[0.693s] -- Added test 'xmllint' to check XML markup files
+[0.695s] -- Configuring done
+[0.698s] -- Generating done
+[0.699s] -- Build files have been written to: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/build/recap_robot
+[0.702s] Invoked command in '/home/ndirangu/Documents/intro/pi-code/src/recap_robot/build/recap_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ndirangu/Documents/intro/pi-code/src/recap_robot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot
+[0.703s] Invoking command in '/home/ndirangu/Documents/intro/pi-code/src/recap_robot/build/recap_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ndirangu/Documents/intro/pi-code/src/recap_robot/build/recap_robot -- -j8 -l8
+[0.732s] Invoked command in '/home/ndirangu/Documents/intro/pi-code/src/recap_robot/build/recap_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ndirangu/Documents/intro/pi-code/src/recap_robot/build/recap_robot -- -j8 -l8
+[0.739s] Invoking command in '/home/ndirangu/Documents/intro/pi-code/src/recap_robot/build/recap_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ndirangu/Documents/intro/pi-code/src/recap_robot/build/recap_robot
+[0.744s] -- Install configuration: ""
+[0.744s] -- Execute custom install script
+[0.745s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/config/behaviour_trees/navigate_through_poses_w_replanning_and_recovery.xml
+[0.751s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/config/behaviour_trees/navigate_to_pose_w_replanning_and_recovery.xml
+[0.757s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/config/empty.yaml
+[0.762s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/config/gaz_ros2_ctl_use_sim.yaml
+[0.769s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/config/gazebo_params.yaml
+[0.774s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/config/joystick.yaml
+[0.779s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/config/mapper_params_online_async.yaml
+[0.785s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/config/my_controllers.yaml
+[0.790s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/config/nav2_params.yaml
+[0.795s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/config/twist_mux.yaml
+[0.801s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/description/gazebo_control.xacro
+[0.807s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/description/inertial_macros.xacro
+[0.813s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/description/robot.urdf.xacro
+[0.818s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/description/robot_core.xacro
+[0.824s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/description/ros2_control.xacro
+[0.830s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/launch/joystick.launch.py
+[0.836s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/launch/launch_robot.launch.py
+[0.842s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/launch/launch_sim.launch.py
+[0.847s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/launch/localization_launch.py
+[0.853s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/launch/navigation_launch.py
+[0.859s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/launch/online_async_launch.py
+[0.864s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/launch/rplidar.launch.py
+[0.870s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/launch/rsp.launch.py
+[0.876s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/worlds/dojo2024
+[0.881s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/worlds/empty
+[0.887s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/worlds/obstacles
+[0.896s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/ament_index/resource_index/package_run_dependencies/recap_robot
+[0.904s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/ament_index/resource_index/parent_prefix_path/recap_robot
+[0.913s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/environment/ament_prefix_path.sh
+[0.921s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/environment/ament_prefix_path.dsv
+[0.929s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/environment/path.sh
+[0.937s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/environment/path.dsv
+[0.945s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/local_setup.bash
+[0.952s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/local_setup.sh
+[0.960s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/local_setup.zsh
+[0.968s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/local_setup.dsv
+[0.976s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/package.dsv
+[0.981s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/ament_index/resource_index/packages/recap_robot
+[0.987s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/cmake/recap_robotConfig.cmake
+[0.993s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/cmake/recap_robotConfig-version.cmake
+[0.998s] -- Symlinking: /home/ndirangu/Documents/intro/pi-code/src/recap_robot/install/recap_robot/share/recap_robot/package.xml
+[1.006s] Invoked command in '/home/ndirangu/Documents/intro/pi-code/src/recap_robot/build/recap_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ndirangu/Documents/intro/pi-code/src/recap_robot/build/recap_robot
