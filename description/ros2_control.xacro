@@ -57,7 +57,7 @@
   <!-- Gazebo ros2_control plugin -->
   <gazebo>
     <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
-      <parameters>$(find dojo)/config/my_controllers.yaml</parameters>
+      <parameters>$(find recap_robot)/config/my_controllers.yaml</parameters>
     </plugin>
   </gazebo>
 
