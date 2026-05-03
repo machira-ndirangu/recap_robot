@@ -5,7 +5,7 @@ import os
 
 def generate_launch_description():
     config_file = os.path.join(
-        get_package_share_directory('dojo'),
+        get_package_share_directory('recap_robot'),
         'config',
         'ekf.yaml'
     )
